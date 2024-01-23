@@ -37,7 +37,7 @@ fn main() {
                     const spanEl = document.querySelector('#__layout > div > div.login-container.layout-content-main > div.main-blk > div > div > div > div > div > div > div.tab-box > div:nth-child(2) > span');
                     spanEl.click();
                     await sleep(500);
-                    const inputEl = document.querySelector('#__layout > div > div.login-container.layout-content-main > div.main-blk > div > div > div > div > div > div > div.form-blk > form > div.el-form-item.is-success.is-required > div > div > input');
+                    const inputEl = document.querySelector('#__layout > div > div.login-container.layout-content-main > div.main-blk > div > div > div > div > div > div > div.form-blk > form > div:nth-child(1) > div > div > input');
                     inputEl.value = '';
                     await sleep(500);
                     inputEl.value = '13717955328';
@@ -52,7 +52,7 @@ fn main() {
                     await sleep(500);
                     const loginEl = document.querySelector('#__layout > div > div.login-container.layout-content-main > div.main-blk > div > div > div > div > div > div > div.form-blk > form > div.el-form-item.btn-line > div > button');
                     loginEl.click();
-                }, 1000);
+                }, 1500);
             ").unwrap();
             Ok(())
         })
