@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "企知道",
+    "productName": "qizhidao",
     "version": "1.0.0"
   },
   "tauri": {
