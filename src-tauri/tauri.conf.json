@@ -6,15 +6,22 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "qizhidao",
-    "version": "0.0.0"
+    "productName": "企知道",
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
-      "all": false,
+      "all": true,
       "shell": {
         "all": false,
         "open": true
+      },
+      "fs": {
+        "all": true,
+        "scope": ["$APP/**/*"]
+      },
+      "dialog": {
+        "all": true
       }
     },
     "bundle": {
@@ -36,10 +43,21 @@
       {
         "fullscreen": false,
         "resizable": true,
+        "title": "loading",
+        "width": 1200,
+        "height": 900,
+        "visible": true,
+        "label": "loading"
+      },
+      {
+        "fullscreen": false,
+        "resizable": true,
         "title": "企知道",
         "width": 1200,
         "height": 900,
-        "url": "https://www.qizhidao.com/login"
+        "url": "https://www.qizhidao.com/login",
+        "visible": false,
+        "label": "qizhidao"
       }
     ]
   }
