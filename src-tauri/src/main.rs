@@ -15,10 +15,10 @@ fn handle_window(window: Window, payload: &str) {
 
 fn main() {
     tauri::Builder::default()
-        .setup(|app| {
+        .setup(|_app| {
             #[cfg(debug_assertions)]
             {
-                let loading_window = app.get_window("loading").unwrap();
+                let loading_window = _app.get_window("loading").unwrap();
                 loading_window.open_devtools();
             }
             Ok(())
